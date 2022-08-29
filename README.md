@@ -1,22 +1,28 @@
 
 
-# "MeanCovWriting" routines and parts
+# "Variances estimation using ECMWF forecasts and NMC method" 
 
-This repo contains code that will download 
-and/or read datasets of atmospheric variables
-(e.g. ERA5 data), compute and write mean
-and covariance matrices for these variables
-using xarray, pandas and dask. This is a work in progress 
+In this repo we include two Jupyter notebooks for now:
+- ***get_mars*** is an example of retrieving data from the ECMWF's MARS archive.
+- ***error_cov*** is an example on how to estimate the variance of the error in the forecast model using the NMC method. 
 
 ## Purpose of the repo
 
-Practice a bit with xarray, pandas and dask. Produce
-usable mean and covariances for wind retrievals
+Produce usable mean and covariances for wind retrievals using Jupyter Notebooks and modern tools such as:
+- [xarray](https://docs.xarray.dev/en/stable/)
+- [Dask](https://www.dask.org/)
+- [Pandas](https://pandas.pydata.org/)
+- [Cartopy](https://scitools.org.uk/cartopy/docs/latest/)
+- Etc.
+
+We want to propose a methodology of work were development and distribution is based on Jupyter Notebooks; this is a great environment
+to develope, prototype and deploy solutions for geoscience at scale. It is also very well suited to "connect" with Machine Learning tooling,
+such as [Sci-kit Learn](https://scikit-learn.org/stable/), [TensorFlow](https://www.tensorflow.org/), etc. 
 
 
 ## Documentation
 
-Coming soon.
+Every Notebook in this repo is documented via Markdown.
 
 
 
